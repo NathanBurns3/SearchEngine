@@ -1,0 +1,78 @@
+1. create each of the 9 different methods
+2. write a comment above each method that explains its name, purpose, input, and output
+*pseudocode for each method*
+
+is_vowel
+1. write the method with the bool return type and a char parameter
+2. have a for loop that will iterate through every character in the vowel list
+3. for each iteration check the vowel character with the input character
+    3a. if the character matches return true
+    3b. if the character does not match move on to the next iteration
+4. Once you have iterated through the entire vowels list and none of the characters match return false
+
+is_consonant
+1. write the method with the bool return type and a char parameter
+2. have a for loop that will iterate through every character in the vowel list
+3. for each iteration check the vowel character with the input character
+    3a. if the character matches return false
+    3b. if the character does not match move on to the next iteration
+4. Once you have iterated through the entire vowels list and none of the characters match return true
+
+ends_with
+1. write the method with the bool return type and two string parameters (candidate and suffix)
+2. set up four if-else statements that test each of these scenarios
+    2a. if the candidate string is empty and the suffix string is empty return true
+    2b. if the candidate string is empty and the suffix string is not empty return false
+    2c. if the candidate length is greater than the suffix length then return true
+    2d. if none of these if statements pass then return false
+
+ends_with_double_consonant
+1. write the method with the bool return type and a string parameter
+2. create two variables that hold the last character and second-to-last character of the string argument
+3. set up three if-else statements that test each of these scenarios
+    3a. if the last character is a consonant and the second-to-last character is a consonant return true (use the is_consonant method)
+    3b. if the last character and the second-to-last character are the same then return true
+    3c. if none of these if statements pass then return false
+
+ends_with_cvc
+1. write the method with the bool return type and a string parameter
+2. create three char variables
+    2a. a variable that holds the last character of the string argument
+    2a. a variable that holds the second-to-last character of the string argument
+    2a. a variable that holds the third-to-last character of the string argument
+3. set up an if-else statement that tests the following scenario
+    3a. if the last character is a constant and the second-to-last character is a vowel and the third-to-last character is a constant return true (use the is_constant and is_vowel method)
+    3b. else return false
+
+count_consonants_at_front
+1. write the method with the int return type and a string parameter
+2. set up a static int variable and set it to zero (it should be able to change and save those changes)
+3. set up a while loop that keeps iterating through for every letter at the beginning of the string argument that is a consonant (use the is_consonant method)
+    3a. for every iteration increase the int variable by 1
+4. after looping through return the int variable
+
+count_vowels_at_back
+1. write the method with the int return type and a string parameter
+2. create 2 static int variables (they should be able to change and save those changes)
+    2a. one will hold the string length
+    2b. one will be a counter and hold the value of 0
+3. set up a while loop that keeps iterating through for every letter at the back of the string argument that is a vowel (use the is_vowel method)
+    3a. for every iteration subtract the character index by one and increase the counter by one
+4. after looping through return the counter variable
+
+contains_vowel
+1. write the method with the bool return type and a string parameter
+2. set up a for loop that starts at zero and increments by one. it should iterate for every character in the string argument
+3. for every iteration, using an if statement, you should check if the character at the current iteration is a vowel (use the is_vowel method)
+    3a. if it is a vowel return true
+4. if you iterate through the entire string and there isn't a vowel return false
+
+new_ending
+1. write the method with the string return type and 2 string parameters (candidate and replacement) and an int parameter (suffixLength)
+2. set up a static string variable that is empty (it should be able to change and save those changes)
+3. set up a for loop that starts at zero and increments by one. it should iterate for every character before the suffix (subtract the suffix length from the candidate length to get this number)
+4. for every iteration create a char variable that holds the character at the iteration in the string
+5. create a new string variable that converts the char variable into a string
+6. append that string character to the string variable created in step 2
+7. after iterating through, append the replacement string to the end of the newString variable
+8. return the newString variable

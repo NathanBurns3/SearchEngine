@@ -1,0 +1,15 @@
+A tradeoff that Software Developers often face is readability vs complexity in writing code. this dilemma happens when
+a developer is writing code and comes up with a very complex solution but it is very hard to read/understand. When
+trying to consider simplifying their code at the cost of it not being as efficient they should consider these factors:
+
+Reusability: The developer should ask themselves how many people will be using/reading this code. If this code is a
+key part of the software and a lot of developers will be looking at this code for documentation or other parts of the
+software, then they should consider simplifying their solution so that it is easier to understand and reuse for others.
+
+Comments: If the developer is able to leave detailed comments throughout the code that makes it much easier to
+understand then they should keep the code how it is. The other developers should be able to read through the comments
+and understand how the code works.
+
+Solutions with the same speed/memory usage: If the developer can create other solutions that use the same time
+complexity and memory usage then they should consider those solutions. If not then they should consult with others
+on if they should sacrifice the readability to keep the complexity and speed/memory usage of their solution.

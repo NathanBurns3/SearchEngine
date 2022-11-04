@@ -1,0 +1,2 @@
+When pulling out a single character or multiple characters from a string
+is it better to use the .at() method orusing the [] operators?
